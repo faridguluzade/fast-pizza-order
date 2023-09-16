@@ -8,6 +8,7 @@ import Button from "../../ui/Button";
 import DeleteItem from "../cart/DeleteItem";
 
 function MenuItem({ pizza }) {
+  // eslint-disable-next-line react/prop-types
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
   const dispatch = useDispatch();
   const currentQuantity = useSelector(getCurrentQuantity(id));
